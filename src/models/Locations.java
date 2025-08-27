@@ -18,11 +18,15 @@ public class Locations
         locations.put(locationId, this);
     }
 
+    public int getLocationId(){return locationId;};
+    public String getLocationName(){return locationName;};
+    public String getLocationRegion(){return locationRegion;};
+
     @Override
     public String toString()
     {
-        return "ID " + locationId + "\n" +
-                "Name: " + locationName + "\n" +
+        return "ID " + locationId +
+                "Name: " + locationName  +
                 "Region" + locationRegion + "\n";
     }
 }
